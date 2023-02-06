@@ -1,9 +1,13 @@
 import style from "./Header.module.css";
 
+import vbLogo from "../assets/virtualblue-logo.svg";
+
+console.log(vbLogo);
+
 export function Header() {
   return (
     <header className={style.header}>
-      <strong>Virtual Blue - Feed</strong>
+      <img src={vbLogo} alt="Logotipo do Virtual Blue" />
     </header>
   );
 }
