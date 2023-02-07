@@ -1,6 +1,6 @@
 # Todos os projetos de estudos feitos em 2023
 
-## 💻 Projeto 1: Nome projeto
+## 💻 Projeto 1: VB Social
 ### Breve descrição: O projeto tem o objetivo de fazer...
 - [NameApp](./LinkProjeto)
 
