@@ -2,7 +2,7 @@
 
 ## 💻 Projeto 1: VB Social
 ### Breve descrição: O projeto tem o objetivo de fazer...
-- [NameApp](./vb-social)
+- [VB Social](./vb-social)
 
 ## 💻 Projeto 2: Nome projeto
 ### Breve descrição: O projeto tem o objetivo de fazer...
