@@ -1,6 +1,6 @@
 import { Header } from "./components/Header";
+import { Post } from "./components/Post";
 import { Sidebar } from "./components/Sidebar";
-import { Post } from "./Post";
 
 import style from "./App.module.css";
 
