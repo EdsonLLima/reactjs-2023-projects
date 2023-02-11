@@ -12,6 +12,11 @@
   --blue-300: #a5affb;
 }
 
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--blue-500);
+}
+
 * {
   margin: 0;
   padding: 0;
