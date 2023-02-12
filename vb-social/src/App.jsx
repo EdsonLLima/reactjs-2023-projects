@@ -21,10 +21,6 @@ export function App() {
             author="Heloise Lima"
             content="Lorem Ipsum is simply dummyunknown printer took a galley of type "
           />
-          <Post
-            author="Heloise Lima"
-            content="Lorem Ipsum is simply dummyunknown printer took a galley of type "
-          />
         </main>
       </div>
     </div>
