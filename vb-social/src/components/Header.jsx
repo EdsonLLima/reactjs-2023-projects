@@ -1,6 +1,6 @@
 import style from "./Header.module.css";
 
-import vbLogo from "../assets/virtualblue-logo.svg";
+import vbLogo from "../../public/virtualblue-logo.svg";
 
 console.log(vbLogo);
 
