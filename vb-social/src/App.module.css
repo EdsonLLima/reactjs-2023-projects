@@ -8,3 +8,19 @@
   gap: 2rem;
   align-items: flex-start;
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* regrinha de 3 aonde
+* 16 seria o nosso 100% e 14 o que eu quero em porcentagem
+*16 -> 100%
+*14 -> x
+* Calculo:  14 x 100 /16 = 87.5
+*/
