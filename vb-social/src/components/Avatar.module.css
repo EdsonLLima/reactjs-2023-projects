@@ -1,0 +1,21 @@
+.avatar {
+  /* box volta a trabalahr de forma externa
+    o conteúdo de paddin, margin, outline */
+  /* 
+    ***box-sizing: initial;*** 
+    *
+    -> a baixo o mesmo processo usando 
+    CALC E CALCULANDO AS BORDAS 2 X TAMANHO_BORDA(4) OU (2)
+    DEPOIS SOMA AS BORDAS E JUNTA AO CALC*/
+  width: 3rem;
+  height: 3rem;
+  border-radius: 8px;
+}
+
+.avatarWithBorder {
+  width: calc(3rem + 12px);
+  height: calc(3rem + 12px);
+  border-radius: 8px;
+  border: 4px solid var(--gray-800);
+  outline: 2px solid var(--blue-500);
+}
