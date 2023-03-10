@@ -23,7 +23,7 @@ const posts = [
       {
         type: "paragraph",
         content:
-          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
+          "Mais um  projeto no meu portfólio. É um projeto que fiz durante o tempo de estudos, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
       },
       { type: "link", content: "👉 jane.design/doctorcare" },
     ],
@@ -41,7 +41,7 @@ const posts = [
       {
         type: "paragraph",
         content:
-          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
+          "Acabei de subir mais um projeto no meu portfólio. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
       },
       { type: "link", content: "👉 jane.design/doctorcare" },
     ],
