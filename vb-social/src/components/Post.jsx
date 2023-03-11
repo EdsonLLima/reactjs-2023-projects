@@ -8,7 +8,7 @@ import style from "./Post.module.css";
 
 export function Post({ author, publishedAt, content }) {
   //estado = variáveis que eu quero que o componente monitore
-  const [comments, setComments] = useState([1, 2]);
+  const [comments, setComments] = useState(["Post muito bacana, hein?!"]);
 
   const publishedDateFormatted = format(
     publishedAt,
@@ -27,6 +27,7 @@ export function Post({ author, publishedAt, content }) {
     event.preventDefault();
 
     //Imutabilidade
+    //usando o comments.length + 1 para somar
     setComments([...comments, comments.length + 1]);
   }
 
@@ -74,7 +75,7 @@ export function Post({ author, publishedAt, content }) {
 
       <div className={style.commentList}>
         {comments.map((comment) => {
-          return <Comment />;
+          return <Comment content={comment} />;
         })}
       </div>
     </article>
