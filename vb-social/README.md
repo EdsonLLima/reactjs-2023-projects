@@ -1,8 +1,3 @@
-<p align="left">
-	<img alt="App Portfolio" src="./vb-social-resposivo.png" widht="40%">
-	<img alt="App Portfolio" src="./vb-social-web.png" widht="40%">
-</p>
-
 
 # Primeiro Projetlol: VB Social
 
@@ -41,3 +36,13 @@
 - Enforcing accessibility standards
 - How to start a project with TypeScripts and fundamentals.
 - Apply static typing to the application
+
+### View Web
+<p align="center">	
+	<img alt="App Portfolio" src="./public/vb-social-web.png" widht="60%">		
+</p>
+
+### View Responsive Mobile
+<p align="center">	
+	<img alt="App Portfolio" src="./public/vb-social-responsivo.png" widht="60%">		
+</p>
