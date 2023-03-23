@@ -57,7 +57,7 @@ export function Post({ author, publishedAt, content }: PostProps) {
     event.target.setCustomValidity("Esse campo é obrigatório!");
   }
 
-  function deleteComment(commentToDelete) {
+  function deleteComment(commentToDelete: string) {
     // console.log(`Deletar comentário ${comment}`);
     // imutabilidade -> as variáveis não sofrem mutação, nós criamos um novo valor (um novo espaço na memória)
     const commentWithoutDeletedOne = comments.filter((comment) => {
