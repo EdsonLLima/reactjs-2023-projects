@@ -32,8 +32,8 @@ const posts: PostType[] = [
   {
     id: 2,
     author: {
-      avatarUrl: "https://github.com/diego3g.png",
-      name: "Diego Fernandes",
+      avatarUrl: "https://github.com/lucalves.png",
+      name: "Lucas Alves",
       role: "Developer FullStack",
     },
     content: [
