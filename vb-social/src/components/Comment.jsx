@@ -13,7 +13,7 @@ export function Comment({ content, onDeleteComment }) {
   function handleLikeComment() {
     /*
     sempre que for atualizar um valor e esse valor 
-    depender dele mesmo para ser atualizado siga o exemplo abaixo
+    depender dele mesmo recomendado fazer algo igual ao exemplo abaixo
     */
     setLikeCount((state) => {
       return state + 1;
