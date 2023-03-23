@@ -1,0 +1,47 @@
+{
+  "hash": "8ede1319",
+  "browserHash": "cbfec8ff",
+  "optimized": {
+    "date-fns": {
+      "src": "../../node_modules/date-fns/esm/index.js",
+      "file": "date-fns.js",
+      "fileHash": "bfebd241",
+      "needsInterop": false
+    },
+    "date-fns/locale/pt-BR": {
+      "src": "../../node_modules/date-fns/esm/locale/pt-BR/index.js",
+      "file": "date-fns_locale_pt-BR.js",
+      "fileHash": "2bd94bbc",
+      "needsInterop": false
+    },
+    "phosphor-react": {
+      "src": "../../node_modules/phosphor-react/dist/index.esm.js",
+      "file": "phosphor-react.js",
+      "fileHash": "dfd36879",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "32a0277c",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "113039dd",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-FIKIFMJB": {
+      "file": "chunk-FIKIFMJB.js"
+    },
+    "chunk-ST3U5LCA": {
+      "file": "chunk-ST3U5LCA.js"
+    },
+    "chunk-DFKQJ226": {
+      "file": "chunk-DFKQJ226.js"
+    }
+  }
+}
