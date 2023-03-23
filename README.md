@@ -1,19 +1,29 @@
-# Todos os projetos de estudos feitos em 2023
+# All study projects done in 2023
 
-## 💻 Projeto 1: VB Social
-### Breve descrição: O projeto tem o objetivo de fazer...
+## 💻 Project 1: VB Social
+### Brief description: 
+O projeto simula o envio de posts em uma rede social. 
+Com o objetivo de aprender os conceitos do ReactJS.
+
+### The project simulates sending posts on a social network.
+### In order to learn the concepts of ReactJS.
 - [VB Social](./vb-social)
 
-## 💻 Projeto 2: Nome projeto
-### Breve descrição: O projeto tem o objetivo de fazer...
-- [NameApp](./LinkProjeto)
+## 💻 Project 2: VB Social with TypeScript
+### Brief description: 
+O projeto simula o envio de posts em uma rede social. 
+Com o objetivo de aprender os conceitos do ReactJS.
+
+### The project simulates sending posts on a social network.
+### In order to learn the concepts of ReactJS.
+- [VB Social](./vb-social-ts)
 
 ## 💻 Projeto 3: Nome projeto
-### Breve descrição: O projeto tem o objetivo de fazer...
+### Brief description: The project aims to make...
 - [NameApp](./LinkProjeto)
 
 ## 💻 Projeto 4: Nome projeto
-### Breve descrição: O projeto tem o objetivo de fazer...
+### Brief description: The project aims to make...
 - [NameApp](./LinkProjeto)
 
 
