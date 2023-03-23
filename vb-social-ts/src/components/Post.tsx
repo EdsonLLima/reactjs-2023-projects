@@ -1,6 +1,6 @@
 import { format, formatDistanceToNow } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
-import { ChangeEvent, FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, InvalidEvent, useState } from "react";
 
 import { Avatar } from "./Avatar";
 import { Comment } from "./Comment";
@@ -52,7 +52,7 @@ export function Post({ author, publishedAt, content }: PostProps) {
     setNewCommentText(event.target.value);
   }
 
-  function handleNewCommentInvalid(event) {
+  function handleNewCommentInvalid(event: InvalidEvent<HTMLTextAreaElement>) {
     //mensagem de alerta customizada pegando metodo nativo
     event.target.setCustomValidity("Esse campo é obrigatório!");
   }
