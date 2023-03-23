@@ -16,7 +16,7 @@ Com o objetivo de aprender os conceitos do ReactJS.
 
 ### The project simulates sending posts on a social network.
 ### In order to learn the concepts of ReactJS.
-- [VB Social](./vb-social-ts)
+- [VB Social with TypeScript](./vb-social-ts)
 
 ## 💻 Projeto 3: Nome projeto
 ### Brief description: The project aims to make...
