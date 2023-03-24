@@ -1,4 +1,4 @@
-# Primeiro Projetlo: VB Social
+# Primeiro Projeto: VB Social
 
 ## Objetivo com esse projeto é estudar a estrutura basica de um projeto feito em ReactJS:
 
