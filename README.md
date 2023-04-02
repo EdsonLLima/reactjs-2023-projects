@@ -4,18 +4,18 @@
 ### Brief description: 
 O projeto simula o envio de posts em uma rede social. 
 Com o objetivo de aprender os conceitos do ReactJS.
-
-### The project simulates sending posts on a social network.
-### In order to learn the concepts of ReactJS.
+***
+The project simulates sending posts on a social network.
+In order to learn the concepts of ReactJS.
 - [VB Social](./vb-social)
 
 ## 💻 Project 2: VB Social with TypeScript
 ### Brief description: 
 O projeto simula o envio de posts em uma rede social. 
 Com o objetivo de aprender os conceitos do ReactJS.
-
-### The project simulates sending posts on a social network.
-### In order to learn the concepts of ReactJS.
+***
+The project simulates sending posts on a social network.
+In order to learn the concepts of ReactJS.
 - [VB Social with TypeScript](./vb-social-ts)
 
 ## 💻 Projeto 3: Nome projeto
