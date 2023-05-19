@@ -26,37 +26,37 @@ export function History() {
               <td>Tasks</td>
               <td>20 minutos</td>
               <td>Há cerca de 2 meses</td>
-              <td>Em andamento</td>
+              <td>Concluído</td>
             </tr>
             <tr>
               <td>Tasks</td>
               <td>20 minutos</td>
               <td>Há cerca de 2 meses</td>
-              <td>Em andamento</td>
+              <td>Concluído</td>
             </tr>
             <tr>
               <td>Tasks</td>
               <td>20 minutos</td>
               <td>Há cerca de 2 meses</td>
-              <td>Em andamento</td>
+              <td>Concluído</td>
             </tr>
             <tr>
               <td>Tasks</td>
               <td>20 minutos</td>
               <td>Há cerca de 2 meses</td>
-              <td>Em andamento</td>
+              <td>Concluído</td>
             </tr>
             <tr>
               <td>Tasks</td>
               <td>20 minutos</td>
               <td>Há cerca de 2 meses</td>
-              <td>Em andamento</td>
+              <td>Concluído</td>
             </tr>
             <tr>
               <td>Tasks</td>
               <td>20 minutos</td>
               <td>Há cerca de 2 meses</td>
-              <td>Em andamento</td>
+              <td>Concluído</td>
             </tr>
           </tbody>
         </table>
