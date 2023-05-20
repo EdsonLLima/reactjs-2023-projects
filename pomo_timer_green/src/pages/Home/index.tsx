@@ -9,6 +9,8 @@ import {
   TaskInput,
 } from './styles'
 
+// controlled | uncontrolled
+
 export function Home() {
   return (
     <HomeContainer>
@@ -27,7 +29,6 @@ export function Home() {
             <option value="Pera" />
             <option value="Project 04" />
           </datalist>
-
           <label htmlFor="minutesAmount">durante</label>
           <MinutesAmountInput
             type="number"
@@ -37,7 +38,6 @@ export function Home() {
             min={5}
             max={60}
           />
-
           <span>minutos.</span>
         </FormContainer>
 
@@ -49,7 +49,7 @@ export function Home() {
           <span>0</span>
         </CountdownContainer>
 
-        <StartCountdownButton disabled type="submit">
+        <StartCountdownButton /* disabled={!task} */ type="submit">
           <Play size={24} />
           Começar
         </StartCountdownButton>
