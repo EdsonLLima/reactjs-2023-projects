@@ -11,7 +11,7 @@ import {
   StartCountdownButton,
   TaskInput,
 } from './styles'
-// Formulario de creiação de novo ciclo - só para enteder a tradução
+// Formulario de criação de novo ciclo - só para enteder a tradução
 const newCycleFormValidationSchema = zod.object({
   task: zod.string().min(1, 'Informe a tarefa'),
   minutesAmount: zod
