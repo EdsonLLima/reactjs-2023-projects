@@ -11,6 +11,7 @@ import {
   StartCountdownButton,
   TaskInput,
 } from './styles'
+import { useState } from 'react'
 // Formulario de creiação de novo ciclo - só para enteder a tradução
 const newCycleFormValidationSchema = zod.object({
   task: zod.string().min(1, 'Informe a tarefa'),
@@ -29,7 +30,16 @@ const newCycleFormValidationSchema = zod.object({
 // extrair dados para criar tipagem com dados do ZOD usando inferir
 type NewCycleFormData = zod.infer<typeof newCycleFormValidationSchema>
 
+interface Cycle {
+  id: string
+  task: string
+  minutesAmount: number
+}
+
 export function Home() {
+  const [cycles, setCycles] = useState<Cycle[]>([])
+  const [activeCycleId, setActiveCycleId] = useState<string | null>(null)
+
   const { register, handleSubmit, watch, reset } = useForm<NewCycleFormData>({
     resolver: zodResolver(newCycleFormValidationSchema),
     defaultValues: {
@@ -39,9 +49,24 @@ export function Home() {
   })
 
   function handleCreateNewCycle(data: NewCycleFormData) {
-    console.log(data)
+    const id = String(new Date().getTime)
+
+    const newCycle: Cycle = {
+      id,
+      task: data.task,
+      minutesAmount: data.minutesAmount,
+    }
+
+    // sempre que uma alteração de estado depender do valor anterior
+    // usamos o formato de arrow function
+    setCycles((state) => [...state, newCycle])
+    setActiveCycleId(id)
     reset()
   }
+
+  const activeCycle = cycles.find((cycle) => cycle.id === activeCycleId)
+
+  console.log(activeCycle)
 
   const task = watch('task')
   const isSubmitDisabled = !task
