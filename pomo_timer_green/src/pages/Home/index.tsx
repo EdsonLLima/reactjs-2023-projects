@@ -49,7 +49,7 @@ export function Home() {
   })
 
   function handleCreateNewCycle(data: NewCycleFormData) {
-    const id = String(new Date().getTime)
+    const id = String(new Date().getTime())
 
     const newCycle: Cycle = {
       id,
