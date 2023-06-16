@@ -1,4 +1,4 @@
-import { Play } from 'phosphor-react'
+import { HandPalm, Play } from 'phosphor-react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as zod from 'zod'
@@ -149,7 +149,7 @@ export function Home() {
 
         {activeCycle ? (
           <StopCountdownButton type="button">
-            <Play size={24} />
+            <HandPalm size={24} />
             Interromper
           </StopCountdownButton>
         ) : (
