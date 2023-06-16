@@ -38,6 +38,7 @@ interface Cycle {
   task: string
   minutesAmount: number
   startDate: Date
+  InterruptedDate?: Date
 }
 
 export function Home() {
@@ -89,6 +90,8 @@ export function Home() {
     reset()
   }
 
+  function handleInterruptCycle() { }
+
   const totalSeconds = activeCycle ? activeCycle.minutesAmount * 60 : 0
   const currentSeconds = activeCycle ? totalSeconds - amountSecondsPassed : 0
 
@@ -117,9 +120,9 @@ export function Home() {
           <TaskInput
             type="text"
             id="task"
-            disabled={!!activeCycle}
             list="task-suggestions"
             placeholder="Dê um nome para o seu projeto"
+            disabled={!!activeCycle}
             {...register('task')}
           />
           <datalist id="task-suggestions">
