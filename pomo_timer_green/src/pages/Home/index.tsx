@@ -147,10 +147,17 @@ export function Home() {
           <span>{seconds[1]}</span>
         </CountdownContainer>
 
-        <StartCountdownButton disabled={isSubmitDisabled} type="submit">
-          <Play size={24} />
-          Começar
-        </StartCountdownButton>
+        {activeCycle ? (
+          <StopCountdownButton type="button">
+            <Play size={24} />
+            Interromper
+          </StopCountdownButton>
+        ) : (
+          <StartCountdownButton disabled={isSubmitDisabled} type="submit">
+            <Play size={24} />
+            Começar
+          </StartCountdownButton>
+        )}
       </form>
     </HomeContainer>
   )
