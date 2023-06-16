@@ -117,6 +117,7 @@ export function Home() {
           <TaskInput
             type="text"
             id="task"
+            disabled={!!activeCycle}
             list="task-suggestions"
             placeholder="Dê um nome para o seu projeto"
             {...register('task')}
@@ -136,6 +137,7 @@ export function Home() {
             min={5}
             max={60}
             {...register('minutesAmount', { valueAsNumber: true })}
+            disabled={!!activeCycle}
           />
           <span>minutos.</span>
         </FormContainer>
