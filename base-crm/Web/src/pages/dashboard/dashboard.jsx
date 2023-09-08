@@ -2,8 +2,49 @@ import { Menu } from "../../components/menu/Menu";
 import { Busca } from "../../components/busca/busca";
 import { Indicador } from "../../components/indicador/indicador";
 import { Grafico } from "../../components/grafico/grafico";
+import { useEffect, useState } from "react";
+
 
 export function Dashboard() {
+    const [dadosIndicadores, setDadosIndicadores] = useState({})
+    const [dadosAnual, setDadosAnual] = useState([])
+
+
+    function MontarIndicadores() {
+        //GET no server
+        setDadosIndicadores({
+            valor_mes: 500000,
+            qtd_mes: 600,
+            valor_dia: 18500,
+            qtd_dia: 125
+        })
+    }
+
+    function MontarGrafAnual() {
+        //GET no server
+        setDadosAnual(
+            [
+                ["Mês", "Valor"],
+                ["01", 1000],
+                ["02", 1170],
+                ["03", 660],
+                ["04", 1030],
+                ["05", 800],
+                ["06", 780],
+                ["07", 1400],
+            ]
+        )
+    }
+
+    function MontarDashboard() {
+        MontarIndicadores();
+        MontarGrafAnual();
+    }
+
+    useEffect(() => {
+        MontarDashboard();
+    }, []);
+
     return (
         <div className="container-fluid">
             <div className="row flex-nowrap">
@@ -18,25 +59,27 @@ export function Dashboard() {
 
                     <div className="d-flex justify-content-between">
                         <h1>Dashboard...</h1>
-                        <button className="btn btn-primary ms-4">Atualizar</button>
+                        <button onClick={MontarDashboard} className="btn btn-primary ms-4">Atualizar</button>
                     </div>
                     <div className="row">
                         <div className="col-md-3 mt-3">
                             <Indicador
-                                titulo="Negocios do mês"
-                                valor="R$ 19.000,00"
-                                rodape="12 atividades" />
+                                titulo="Negócios do mês"
+                                valor={new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(dadosIndicadores.valor_mes)}
+                                rodape={` ${dadosIndicadores.qtd_mes} atividades`} />
                         </div>
                         <div className="col-md-3 mt-3">
                             <Indicador
-                                titulo="Atuvudades para hoje"
-                                valor="6 atividades"
-                                rodape="R$ 3.150,00" />
+                                titulo="Atividades para hoje"
+                                valor={`${dadosIndicadores.qtd_dia} atividades`}
+                                rodape={new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(dadosIndicadores.valor_dia)} />
                         </div>
                         <div className="col-12 mt-5">
                             <Grafico
                                 titulo="Vendas"
-                                chartType="Line" />
+                                chartType="Line"
+                                dados={dadosAnual}
+                            />
                         </div>
 
                     </div>
