@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    background-color: #f1f5f8;
+}
+
+select {
+    border: 0;
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
